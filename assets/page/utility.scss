@@ -1,0 +1,12 @@
+
+.utlity-card-menu{
+    margin-bottom: 1rem;
+    &:hover{
+        h5{
+            -webkit-transform: scale(1.2);
+            color: white;
+        }
+        background-color: grey;
+        cursor: pointer;
+    }
+}
