@@ -29,7 +29,7 @@ module.exports =  {
   ** Global CSS
   */
   css: [
-    '../nuxtPrj/assets/style.bundle.scss'
+    '../IMS-Web-Source/assets/style.bundle.scss'
   ],
   /*
   ** Plugins to load before mounting the App
