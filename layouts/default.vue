@@ -37,7 +37,7 @@
     </div>
 
     <!-- Content -->
-    <div class="container ims-container">
+    <div class="ims-container">
       <Nuxt class="ims-container" />
     </div>
   </div>

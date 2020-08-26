@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-2"><h2> Utility Menu </h2></div>
             <div class="col-12 col-md-12">

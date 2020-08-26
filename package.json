@@ -16,7 +16,9 @@
     "firebase": "^7.17.1",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.0",
-    "sass-loader": "^9.0.3"
+    "nuxt-i18n": "^6.13.12",
+    "sass-loader": "^9.0.3",
+    "vue-i18n": "^8.21.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.11.0",
