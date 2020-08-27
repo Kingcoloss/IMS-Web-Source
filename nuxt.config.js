@@ -29,13 +29,14 @@ module.exports =  {
   ** Global CSS
   */
   css: [
-    '../IMS-Web-Source/assets/style.bundle.scss'
+    '~/assets/style.bundle.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/i18n.js'
   ],
   /*
   ** Auto import components
@@ -55,6 +56,7 @@ module.exports =  {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-i18n'
   ],
   /*
   ** Axios module configuration
@@ -66,5 +68,9 @@ module.exports =  {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
+  router:{
+    middleware: ['i18n'],
+  },
+  
 }
