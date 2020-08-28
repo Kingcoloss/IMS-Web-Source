@@ -1,6 +1,7 @@
 {
     "header":{
-        "welcomeToIMS":"Welcome to Invest Management System"
+        "welcomeToIMS":"ยินดีต้อนรับสูระบบบริหารจัดการการลงทุน",
+        "utilityMenu":"เมนูโปรแกรมอรรถประโยชน์"
     },
     "label":{}
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="text-center" style="margin:25px;">
-        <h1>Welcome to Invest Management System</h1>
+        <h1>{{ $t('header.welcomeToIMS') }}</h1>
       </div>
 
     <div class="d-flex" style="margin-top:25px;">

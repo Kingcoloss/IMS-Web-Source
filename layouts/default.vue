@@ -16,11 +16,9 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
 
-            <b-nav-item-dropdown text="Lang" right hidden>
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="#">FA</b-dropdown-item>
+            <b-nav-item-dropdown text="Lang" right>
+              <b-dropdown-item @click="changeLang('en')">EN</b-dropdown-item>
+              <b-dropdown-item @click="changeLang('th')">TH</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown right hidden>
@@ -42,3 +40,23 @@
     </div>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+export default {
+  methods: {
+    changeLang(lang){
+      this.$store.dispatch('userConfig/changeLocalLang',lang)
+      console.log(this.langState)
+      this.$i18n.setLocale(this.langState)
+
+      //location.reload()
+    }
+  },
+  computed: {
+    ...mapState({
+      langState : (state)=>state.userConfig.localLang
+    })
+  },
+}
+</script>

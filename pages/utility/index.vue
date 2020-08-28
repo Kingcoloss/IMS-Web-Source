@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center mb-2"><h2> Utility Menu </h2></div>
+            <div class="col-12 text-center mb-2"><h2>{{ $t('header.utilityMenu') }}</h2></div>
             <div class="col-12 col-md-12">
                 <div class="row">
                     <div class="col-6">

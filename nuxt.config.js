@@ -36,7 +36,6 @@ module.exports =  {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/i18n.js'
   ],
   /*
   ** Auto import components
@@ -70,7 +69,30 @@ module.exports =  {
   build: {
   },
   router:{
-    middleware: ['i18n'],
+    // middleware:['siteLang']
   },
-  
+  i18n: {
+    detectBrowserLanguage: false,
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English'
+      },
+      {
+        code: 'th',
+        iso: 'th-TH',
+        name: 'ไทย'
+      }
+    ],
+    defaultLocale: 'en',
+    defaultLocaleRouteNameSuffix: 'default',
+    strategy: 'no_prefix',
+    vueI18n: {
+      messages: {
+        th: require('./lang/th.json'),
+        en: require('./lang/en.json')
+      }
+    }
+  },
 }
